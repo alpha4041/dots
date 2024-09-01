@@ -5,7 +5,7 @@ let
 
   mkHome = {
     modules,
-    user ? "wolly",
+    user ? "alpha",
     stateVersion ? "24.05",
     system ? "x86_64-linux",
   }: home-manager.lib.homeManagerConfiguration {
@@ -17,6 +17,6 @@ let
     extraSpecialArgs = { inherit inputs user stateVersion; };
   };
 in {
-  "wolly@kaizen" = mkHome { modules = [ ./wolly/kaizen ]; };
-  "wolly@minimo" = mkHome { modules = [ ./wolly/minimo ]; };
+  "alpha@kaizen" = mkHome { modules = [ ./alpha/kaizen ]; };
+  "alpha@minimo" = mkHome { modules = [ ./alpha/minimo ]; };
 }

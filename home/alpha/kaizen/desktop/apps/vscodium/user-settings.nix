@@ -4,7 +4,6 @@
 
     extensions = {
       autoUpdate = false;
-      experimental.affinity.vscodevim.vim = 1; # To improve performance
     };
 
     window = {

@@ -7,9 +7,9 @@ in {
     groups = { };
 
     users = {
-      wolly = {
+      alpha = {
         isNormalUser = true;
-        initialPassword = "password"; # TODO: Encrypt password
+        initialPassword = "142536"; # TODO: Encrypt password
         extraGroups = [ "wheel" "video" "audio" ] ++ ifExist [
           "kvm"
           "docker"

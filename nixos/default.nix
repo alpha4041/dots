@@ -9,11 +9,10 @@ let
     modules,
     stateVersion ? "24.05",
     system ? "x86_64-linux",
-    disk ? ./disks/thinkpad.nix,
   }: nixosSystem {
     inherit system;
     modules = [ sops disko ./shared ] ++ modules;
-    specialArgs = { inherit inputs disk stateVersion; };
+    specialArgs = { inherit inputs stateVersion; };
   };
 in {
   kaizen = mkHost { modules = [ ./hosts/kaizen ]; };

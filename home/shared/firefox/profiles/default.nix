@@ -5,17 +5,11 @@ let
 in {
   bookmarks = { };
   extensions = with addons; [
-    vimium-c
-
     clearurls
-    new-tab-override
-    auto-tab-discard
     don-t-fuck-with-paste
     istilldontcareaboutcookies
-
     sponsorblock
     ublock-origin
-
     github-file-icons
   ];
 

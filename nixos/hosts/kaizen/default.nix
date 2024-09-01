@@ -7,7 +7,7 @@
   ];
 
   # disko = import disk;
-  networking.hostName = "kaizen";
+  networking.hostName = "asus-VB-Pro";
 
   hardware = {
     bluetooth = {
@@ -19,15 +19,10 @@
       enable = true;
       enable32Bit = true;
     };
-    opentabletdriver = {
-      enable = true;
-      daemon.enable = true;
-    };
   };
 
   boot = {
     blacklistedKernelModules = [ "k10temp" ];
-    extraModulePackages = [ config.boot.kernelPackages.zenpower ];
   };
 
   # Allow systemd to handle coredumps.

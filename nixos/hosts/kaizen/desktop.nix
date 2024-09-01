@@ -1,10 +1,9 @@
 { inputs, pkgs, ... }:
 let
-  kaivim = inputs.kaivim.packages.${pkgs.system}.default;
   kaizen = inputs.kaizen.packages.${pkgs.system}.default;
 in {
   environment = {
-    systemPackages = with pkgs; [ kaizen kaivim linux-wifi-hotspot ];
+    systemPackages = with pkgs; [ kaizen linux-wifi-hotspot ];
 
     loginShellInit = /* bash */ ''
       # INFO: If removed, xwayland apps won't work, idk why.
@@ -15,7 +14,6 @@ in {
   };
 
   programs = {
-    droidcam.enable = true;
     virt-manager.enable = true;
     hyprland = {
       enable = true;

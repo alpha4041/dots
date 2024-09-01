@@ -15,7 +15,6 @@
     nixpkgs-wayland.url = "github:nix-community/nixpkgs-wayland";
 
     kaizen.url = "github:thericecold/kaizen";
-    kaivim.url = "github:thericecold/kaivim";
     spicetify-nix.url = "github:gerg-l/spicetify-nix";
  };
 

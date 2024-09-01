@@ -6,6 +6,7 @@
       lsof wget gnumake
       unrar unzip p7zip
       home-manager nix-output-monitor
+      kitty
     ];
   };
 
@@ -14,7 +15,7 @@
     git.enable = true;
     light.enable = true;
     dconf.enable = true;
-    nano.enable = false;
+    nano.enable = true;
     less.enable = lib.mkDefault false; # I'd rather use bat
 
     direnv = {
@@ -24,7 +25,7 @@
 
     nh = {
       enable = true;
-      flake = "/home/wolly/dots";
+      flake = "/home/alpha/dots";
     };
 
     bash = import ./bash.nix;

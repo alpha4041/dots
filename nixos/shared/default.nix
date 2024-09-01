@@ -15,8 +15,8 @@
   };
 
   console.useXkbConfig = true;
-  time.timeZone = "Asia/Manila";
-  i18n.defaultLocale = "en_US.UTF-8";
+  time.timeZone = "Europe/Rome";
+  i18n.defaultLocale = "it_IT.UTF-8";
 
   networking = {
     networkmanager.enable = true;
@@ -31,11 +31,5 @@
   security = {
     polkit.enable = true;
     rtkit.enable = true; # Enable real-time kit
-
-    sudo.enable = false;
-    doas = {
-      enable = true;
-      extraConfig = " permit nopass :wheel ";
-    };
   };
 }

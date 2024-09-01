@@ -2,7 +2,7 @@
 let
   inherit (inputs) spicetify-nix;
 in {
-  imports = [ ./spicetify.nix ./graphic-editors ];
+  imports = [ ./spicetify.nix ];
 
   programs = {
     foot = import ./foot pkgs;
@@ -19,7 +19,7 @@ in {
     # Gnome Apps
     nautilus            # File Manager
     # gnome-clocks
-    # gnome-weather
+    gnome-weather
     # gnome-calendar
     gnome-calculator
 
@@ -29,10 +29,8 @@ in {
     # Windows Stuff
     # wine-staging
     # bottles-unwrapped
-    microsoft-edge-dev
 
     # Utilities
-    obs-studio
     # easyeffects         # Equalizer
     pavucontrol         # Audio/Volume control
     wpa_supplicant_gui
